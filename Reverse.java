@@ -1,17 +1,18 @@
 //package server_test;
 
 public class Reverse {
-	
+	/*
+	입력받은 캐릭터 배열을 역순으로 뒤집어 반환한다.
+	1234 => 4321
+	1 => 1
+	zda => adz
+	*/
 	public static String reverse(char[] arrData)
 	{
 		int nLen = arrData.length;
-		for(int i = 0; i < nLen / 2; ++i)
-		{
-			char temp = arrData[i];
-			arrData[i] = arrData[nLen - i - 1];
-			arrData[nLen - i - 1] = temp;
-		}
 		
+		// 구현
+
 		return new String(arrData);
 	}
 

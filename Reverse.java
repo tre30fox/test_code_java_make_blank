@@ -10,10 +10,19 @@ public class Reverse {
 	public static String reverse(char[] arrData)
 	{
 		int nLen = arrData.length;
+		//문자열의 길이
+		
+		//결과
+		String result = "";
 		
 		// 구현
-
-		return new String(arrData);
+		for(int i=0; i<nLen; i++) {
+			
+			result += arrData[nLen-i-1];
+			System.out.println("result = " + result);
+		}
+		
+		return new String(result);
 	}
 
 	public static void main(String[] args) {
